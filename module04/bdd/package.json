@@ -1,0 +1,23 @@
+{
+  "name": "aula01-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "npx cucumber-js",
+    "test:dev": "node --watch node_modules/@cucumber/cucumber/bin/cucumber-js --fail-fast --format progress --format html:cucumber_report.html",
+    "test:debug": "node --watch --inspect-brk node_modules/@cucumber/cucumber/bin/cucumber-js --fail-fast --format progress --format html:cucumber_report.html"
+  },
+  "keywords": [],
+  "author": "Carlos Eduardo",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "cross-env": "^7.0.3",
+    "sinon": "^18.0.0"
+  }
+}
